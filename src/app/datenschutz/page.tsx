@@ -126,28 +126,7 @@ export default function DatenschutzPage() {
 
           <section className="space-y-3 mb-8">
             <h2 className="text-base md:text-lg font-semibold text-carbon mb-2">
-              5. Geständnisse („Confessions")
-            </h2>
-            <p className="text-sm md:text-base text-carbon/70 leading-relaxed">
-              Auf unserer Website können Sie freiwillig anonyme Erfahrungsberichte
-              („Geständnisse") rund um das Thema Wohnen und Immobilien einreichen.
-              Es wird kein Name und keine sonstige Identifizierungsmerkmale
-              gespeichert. Optional können Sie bei der Einreichung Ihre
-              E-Mail-Adresse angeben, um sich gleichzeitig auf die Warteliste
-              setzen zu lassen; in diesem Fall gelten die Angaben unter Ziffer 4
-              entsprechend.
-            </p>
-            <p className="text-sm md:text-base text-carbon/70 leading-relaxed">
-              Bitte geben Sie in Ihren Geständnissen keine personenbezogenen Daten
-              Dritter (z.&nbsp;B. Namen, Anschriften) preis. Wir behalten uns vor,
-              Beiträge, die gegen geltendes Recht oder die guten Sitten verstoßen,
-              ohne Angabe von Gründen zu löschen.
-            </p>
-          </section>
-
-          <section className="space-y-3 mb-8">
-            <h2 className="text-base md:text-lg font-semibold text-carbon mb-2">
-              6. Cookies und vergleichbare Technologien
+              5. Cookies und vergleichbare Technologien
             </h2>
             <p className="text-sm md:text-base text-carbon/70 leading-relaxed">
               Unsere Website verwendet ausschließlich technisch notwendige Cookies
@@ -165,7 +144,7 @@ export default function DatenschutzPage() {
 
           <section className="space-y-3 mb-8">
             <h2 className="text-base md:text-lg font-semibold text-carbon mb-2">
-              7. Schriftarten (next/font)
+              6. Schriftarten (next/font)
             </h2>
             <p className="text-sm md:text-base text-carbon/70 leading-relaxed">
               Wir verwenden auf unserer Website Schriftarten (u.&nbsp;a. „Geist",
@@ -179,7 +158,7 @@ export default function DatenschutzPage() {
 
           <section className="space-y-3 mb-8">
             <h2 className="text-base md:text-lg font-semibold text-carbon mb-2">
-              8. Empfänger und Drittlandsübermittlung
+              7. Empfänger und Drittlandsübermittlung
             </h2>
             <p className="text-sm md:text-base text-carbon/70 leading-relaxed">
               Eine Übermittlung Ihrer personenbezogenen Daten erfolgt nur an die
@@ -194,7 +173,7 @@ export default function DatenschutzPage() {
 
           <section className="space-y-3 mb-8">
             <h2 className="text-base md:text-lg font-semibold text-carbon mb-2">
-              9. Speicherdauer
+              8. Speicherdauer
             </h2>
             <p className="text-sm md:text-base text-carbon/70 leading-relaxed">
               Wir speichern personenbezogene Daten nur so lange, wie dies für die
@@ -207,7 +186,7 @@ export default function DatenschutzPage() {
 
           <section className="space-y-3 mb-8">
             <h2 className="text-base md:text-lg font-semibold text-carbon mb-2">
-              10. Ihre Rechte als betroffene Person
+              9. Ihre Rechte als betroffene Person
             </h2>
             <p className="text-sm md:text-base text-carbon/70 leading-relaxed">
               Sie haben uns gegenüber jederzeit folgende Rechte hinsichtlich der
@@ -250,7 +229,7 @@ export default function DatenschutzPage() {
 
           <section className="space-y-3">
             <h2 className="text-base md:text-lg font-semibold text-carbon mb-2">
-              11. Aktualität dieser Datenschutzerklärung
+              10. Aktualität dieser Datenschutzerklärung
             </h2>
             <p className="text-sm md:text-base text-carbon/70 leading-relaxed">
               Wir behalten uns vor, diese Datenschutzerklärung anzupassen, damit
