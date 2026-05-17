@@ -29,22 +29,22 @@ export default function LandingPage() {
 
 
       {/* ── Profil Card Stack ── */}
-      <section data-gsap-section className="min-h-screen flex flex-col justify-center py-24 bg-stone-50">
+      <section data-gsap-section className="min-h-screen flex flex-col justify-center py-16 md:py-24 bg-stone-50">
         <div className="immio-container">
-          <div className="grid md:grid-cols-2 gap-16 items-center">
+          <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
 
             {/* Left: text + features */}
             <div>
               <div>
-                <span className="text-xs font-semibold text-carbon/40 uppercase tracking-widest">Bewerber-Profil</span>
-                <h2 className="text-4xl font-bold text-carbon mt-2 mb-4 leading-tight">
+                <span className="text-[10px] md:text-xs font-semibold text-carbon/40 uppercase tracking-widest">Bewerber-Profil</span>
+                <h2 className="text-2xl md:text-4xl font-bold text-carbon mt-2 mb-3 md:mb-4 leading-tight">
                   Einmal ausfüllen.<br />Überall bewerben.
                 </h2>
-                <p className="text-carbon/60 mb-8 leading-relaxed">
+                <p className="text-sm md:text-base text-carbon/60 mb-6 md:mb-8 leading-relaxed">
                   Erstelle dein Profil einmalig mit allen relevanten Unterlagen – und bewirb dich auf jede Immobilie mit einem Klick. Kein Papierkram, kein Chaos.
                 </p>
               </div>
-              <div className="space-y-5">
+              <div className="space-y-4 md:space-y-5">
                 {[
                   {
                     icon: <Users className="h-5 w-5 text-stone-500" />,
@@ -68,13 +68,13 @@ export default function LandingPage() {
                     desc: "Lade Gehaltszettel, Schufa und Co. einmalig hoch. Anbieter können Dokumente anfragen – du genehmigst per Klick, und sie landen direkt in ihrem Postfach.",
                   },
                 ].map((f) => (
-                  <div key={f.title} className="flex gap-4">
-                    <div className={`h-10 w-10 rounded-xl flex items-center justify-center flex-shrink-0 shadow-card ${f.highlight ? "bg-amber-50" : "bg-white"}`}>
+                  <div key={f.title} className="flex gap-3 md:gap-4">
+                    <div className={`h-9 w-9 md:h-10 md:w-10 rounded-xl flex items-center justify-center flex-shrink-0 shadow-card ${f.highlight ? "bg-amber-50" : "bg-white"}`}>
                       {f.icon}
                     </div>
                     <div>
-                      <h3 className={`font-semibold mb-1 ${f.highlight ? "text-amber-700" : "text-carbon"}`}>{f.title}</h3>
-                      <p className="text-sm text-carbon/60 leading-relaxed">{f.desc}</p>
+                      <h3 className={`font-semibold text-sm md:text-base mb-0.5 md:mb-1 ${f.highlight ? "text-amber-700" : "text-carbon"}`}>{f.title}</h3>
+                      <p className="text-xs md:text-sm text-carbon/60 leading-relaxed">{f.desc}</p>
                     </div>
                   </div>
                 ))}
@@ -82,7 +82,7 @@ export default function LandingPage() {
             </div>
 
             {/* Right: mockups matching real UI */}
-            <div className="relative h-[660px] flex justify-center mt-20" style={{ transform: "perspective(1200px) rotateY(-8deg) rotateX(4deg)", transformStyle: "preserve-3d" }}>
+            <div className="relative h-[660px] hidden md:flex justify-center mt-20" style={{ transform: "perspective(1200px) rotateY(-8deg) rotateX(4deg)", transformStyle: "preserve-3d" }}>
 
               {/* Besichtigung — floats left, mid-height */}
               <div className="absolute left-0 top-[200px] w-[205px] z-20 bg-white rounded-2xl shadow-xl border border-stone-100 overflow-hidden -rotate-2">
@@ -277,22 +277,22 @@ export default function LandingPage() {
       </section>
 
       {/* ── Für Anbieter & Verkäufer ── */}
-      <section data-gsap-section className="min-h-screen flex flex-col justify-center py-24 bg-white">
-        <div className="immio-container pt-10">
-          <div className="grid md:grid-cols-2 gap-16 items-center">
+      <section data-gsap-section className="min-h-screen flex flex-col justify-center py-16 md:py-24 bg-white">
+        <div className="immio-container md:pt-10">
+          <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
             <div>
               <div>
-                <span className="text-xs font-semibold text-carbon/40 uppercase tracking-widest">Vermieter & Verkäufer</span>
-                <h2 className="text-4xl font-bold text-carbon mt-2 mb-4 leading-tight">
+                <span className="text-[10px] md:text-xs font-semibold text-carbon/40 uppercase tracking-widest">Vermieter & Verkäufer</span>
+                <h2 className="text-2xl md:text-4xl font-bold text-carbon mt-2 mb-3 md:mb-4 leading-tight">
                   Dein Objekt verdient<br />die besten Interessenten.
                 </h2>
-                <p className="text-carbon/60 mb-8 leading-relaxed">
+                <p className="text-sm md:text-base text-carbon/60 mb-6 md:mb-8 leading-relaxed">
                   Schluss mit endlosen Nachrichten und unqualifizierten Anfragen. IMMYO zeigt dir
                   verifizierte Interessenten mit vollständigen Profilen – damit du sofort siehst,
                   wer wirklich passt.
                 </p>
               </div>
-              <div className="space-y-5">
+              <div className="space-y-4 md:space-y-5">
                 {[
                   {
                     icon: <TrendingUp className="h-5 w-5 text-stone-500" />,
@@ -315,13 +315,13 @@ export default function LandingPage() {
                     desc: "Vertrag automatisch mit Bewerber- und Objektdaten befüllen und direkt über die App versenden – papierlos und rechtssicher.",
                   },
                 ].map((f) => (
-                  <div key={f.title} className="flex gap-4">
-                    <div className="h-10 w-10 rounded-xl bg-stone-50 flex items-center justify-center flex-shrink-0 shadow-card">
+                  <div key={f.title} className="flex gap-3 md:gap-4">
+                    <div className="h-9 w-9 md:h-10 md:w-10 rounded-xl bg-stone-50 flex items-center justify-center flex-shrink-0 shadow-card">
                       {f.icon}
                     </div>
                     <div>
-                      <h3 className="font-semibold text-carbon mb-1">{f.title}</h3>
-                      <p className="text-sm text-carbon/60 leading-relaxed">{f.desc}</p>
+                      <h3 className="font-semibold text-sm md:text-base text-carbon mb-0.5 md:mb-1">{f.title}</h3>
+                      <p className="text-xs md:text-sm text-carbon/60 leading-relaxed">{f.desc}</p>
                     </div>
                   </div>
                 ))}
@@ -329,7 +329,7 @@ export default function LandingPage() {
             </div>
 
             {/* Dashboard mockup */}
-            <div className="rounded-3xl p-6 border border-stone-100 overflow-visible" style={{ background: "rgba(248,247,245,0.80)", backdropFilter: "blur(16px)", WebkitBackdropFilter: "blur(16px)", boxShadow: "0 16px 48px rgba(0,0,0,0.12), 0 4px 12px rgba(0,0,0,0.06), inset 0 1px 0 rgba(255,255,255,0.9)" }}>
+            <div className="rounded-3xl p-4 md:p-6 border border-stone-100 overflow-visible" style={{ background: "rgba(248,247,245,0.80)", backdropFilter: "blur(16px)", WebkitBackdropFilter: "blur(16px)", boxShadow: "0 16px 48px rgba(0,0,0,0.12), 0 4px 12px rgba(0,0,0,0.06), inset 0 1px 0 rgba(255,255,255,0.9)" }}>
               <h4 className="text-xs font-semibold text-carbon/40 mb-4 uppercase tracking-widest">Meine Objekte</h4>
               <div className="grid grid-cols-2 gap-3 overflow-visible pt-2">
 
@@ -512,18 +512,18 @@ export default function LandingPage() {
       </section>
 
       {/* ── Für Dienstleister ── */}
-      <section data-gsap-section className="min-h-screen flex flex-col justify-center py-24 bg-stone-50">
+      <section data-gsap-section className="min-h-screen flex flex-col justify-center py-16 md:py-24 bg-stone-50">
         <div className="immio-container">
           {/* Heading */}
-          <div className="text-center mb-14">
-            <span className="text-xs font-semibold text-carbon/40 uppercase tracking-widest">Für Dienstleister</span>
-            <h2 className="text-4xl font-bold text-carbon mt-2 mb-4 leading-tight">
+          <div className="text-center mb-10 md:mb-14">
+            <span className="text-[10px] md:text-xs font-semibold text-carbon/40 uppercase tracking-widest">Für Dienstleister</span>
+            <h2 className="text-2xl md:text-4xl font-bold text-carbon mt-2 mb-3 md:mb-4 leading-tight">
               Mehr Kunden. Direkt in dein Postfach.
             </h2>
           </div>
 
           {/* 3-step flow */}
-          <div className="grid grid-cols-3 gap-4 mb-6 max-w-lg mx-auto">
+          <div className="grid grid-cols-3 gap-3 md:gap-4 mb-8 md:mb-6 max-w-lg mx-auto">
             {[
               { step: "1", title: "Profil anlegen", desc: "In 2 Minuten eingerichtet" },
               { step: "2", title: "Gefunden werden", desc: "Regional & nach Spezialgebiet" },
@@ -541,7 +541,7 @@ export default function LandingPage() {
           </div>
 
           {/* service type cards */}
-          <div className="grid md:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-3 md:gap-4">
             {[
               {
                 icon: <Briefcase className="h-5 w-5 text-blue-600" />,
@@ -584,14 +584,14 @@ export default function LandingPage() {
                 cta: "Als Dienstleister registrieren",
               },
             ].map((c) => (
-              <div key={c.badge} className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 flex flex-col">
-                <div className="flex items-center gap-2.5 mb-3">
-                  <div className={`h-9 w-9 rounded-xl ${c.bg} flex items-center justify-center shrink-0`}>
+              <div key={c.badge} className="bg-white rounded-2xl border border-stone-100 shadow-sm p-4 md:p-5 flex flex-col">
+                <div className="flex items-center gap-2.5 mb-2.5 md:mb-3">
+                  <div className={`h-8 w-8 md:h-9 md:w-9 rounded-xl ${c.bg} flex items-center justify-center shrink-0`}>
                     {c.icon}
                   </div>
-                  <span className="text-xs font-semibold text-carbon/40 uppercase tracking-widest">{c.badge}</span>
+                  <span className="text-[10px] md:text-xs font-semibold text-carbon/40 uppercase tracking-widest">{c.badge}</span>
                 </div>
-                <h3 className="font-bold text-carbon text-base mb-1.5 leading-snug">{c.title}</h3>
+                <h3 className="font-bold text-carbon text-sm md:text-base mb-1.5 leading-snug">{c.title}</h3>
                 <p className="text-xs text-carbon/60 leading-relaxed mb-3 flex-1">{c.desc}</p>
                 <ul className="space-y-1.5">
                   {c.perks.map((p) => (
@@ -606,7 +606,7 @@ export default function LandingPage() {
           </div>
 
           {/* Bottom trust row */}
-          <div className="mt-6 flex flex-wrap justify-center gap-6 text-xs text-carbon/50">
+          <div className="mt-6 flex flex-wrap justify-center gap-4 md:gap-6 text-[11px] md:text-xs text-carbon/50">
             {[
               { icon: <Mail className="h-3.5 w-3.5" />, text: "Anfragen direkt per E-Mail" },
               { icon: <MapPin className="h-3.5 w-3.5" />, text: "Regional gefunden werden" },
@@ -660,12 +660,12 @@ export default function LandingPage() {
 
             {/* Right: copy */}
             <div className="md:col-span-7 order-1 md:order-2">
-              <h2 className="text-2xl md:text-3xl font-bold text-carbon leading-[1.15] tracking-tight mb-6">
+              <h2 className="text-xl md:text-3xl font-bold text-carbon leading-[1.15] tracking-tight mb-4 md:mb-6">
                 Warum ich IMMYO entwickelt habe.
               </h2>
 
-              <div className="space-y-4 text-carbon/80 leading-relaxed text-[13.5px] md:text-[14px]">
-                <p className="text-[15px] text-carbon font-medium leading-snug">
+              <div className="space-y-4 text-carbon/80 leading-relaxed text-[13px] md:text-[14px]">
+                <p className="text-[14px] md:text-[15px] text-carbon font-medium leading-snug">
                   Ich habe IMMYO gebaut, weil sich Wohnungssuche irgendwann nur noch wie Zeitverschwendung angefühlt hat.
                 </p>
 
@@ -686,9 +686,9 @@ export default function LandingPage() {
                 </p>
 
                 {/* Pull-quote */}
-                <div className="relative my-5 py-1">
-                  <span className="absolute -left-1 -top-2 text-4xl leading-none text-carbon/15 select-none font-serif">“</span>
-                  <p className="text-xl md:text-2xl font-bold text-carbon leading-tight tracking-tight pl-5">
+                <div className="relative my-4 md:my-5 py-1">
+                  <span className="absolute -left-1 -top-2 text-3xl md:text-4xl leading-none text-carbon/15 select-none font-serif">“</span>
+                  <p className="text-lg md:text-2xl font-bold text-carbon leading-tight tracking-tight pl-5">
                     IMMYO soll das verändern.
                   </p>
                 </div>
@@ -708,7 +708,7 @@ export default function LandingPage() {
                   ))}
                 </div>
 
-                <p className="text-[15px] text-carbon font-medium leading-snug pt-1">
+                <p className="text-[14px] md:text-[15px] text-carbon font-medium leading-snug pt-1">
                   Denn der Wohnungsmarkt braucht nicht noch mehr Chaos.<br />
                   Sondern endlich ein besseres System.
                 </p>
@@ -733,11 +733,11 @@ export default function LandingPage() {
       {/* ── CTA ── */}
       <section id="waitlist" data-gsap-section className="min-h-screen flex flex-col bg-carbon text-white">
         {/* Waitlist signup — centered */}
-        <div className="flex-1 flex flex-col items-center justify-center text-center immio-container py-24">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 tracking-tight">
+        <div className="flex-1 flex flex-col items-center justify-center text-center immio-container py-16 md:py-24">
+          <h2 className="text-3xl md:text-5xl font-bold mb-3 md:mb-4 tracking-tight">
             Sei als Erste:r dabei.
           </h2>
-          <p className="text-white/55 max-w-md mx-auto leading-relaxed mb-10">
+          <p className="text-sm md:text-base text-white/55 max-w-md mx-auto leading-relaxed mb-8 md:mb-10">
             Trag dich in die Warteliste ein und sei beim Launch von IMMYO sofort dabei.<br />Kein Spam. Kein Drama. Versprochen.
           </p>
           <WaitlistForm />

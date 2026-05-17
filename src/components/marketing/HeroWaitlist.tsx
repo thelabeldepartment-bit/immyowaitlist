@@ -58,14 +58,14 @@ export function HeroWaitlist() {
   return (
     <div className="w-full max-w-xl mx-auto flex flex-col items-center text-center">
       {/* Badge */}
-      <div className="inline-flex items-center gap-2 bg-white/15 backdrop-blur-md text-white text-[11px] font-semibold px-4 py-2 rounded-full mb-8 border border-white/30 tracking-[0.12em] uppercase shadow-md">
-        <Star className="h-3 w-3 fill-white text-white" />
+      <div className="inline-flex items-center gap-1.5 md:gap-2 bg-white/15 backdrop-blur-md text-white text-[9px] md:text-[11px] font-semibold px-3 py-1.5 md:px-4 md:py-2 rounded-full mb-5 md:mb-8 border border-white/30 tracking-[0.1em] md:tracking-[0.12em] uppercase shadow-md">
+        <Star className="h-2.5 w-2.5 md:h-3 md:w-3 fill-white text-white" />
         Die moderne Immobilienplattform für Deutschland
       </div>
 
       {/* Headline */}
       <h1
-        className="text-4xl md:text-6xl font-extrabold text-white leading-[1.06] tracking-tight mb-5 max-w-3xl"
+        className="text-[28px] md:text-6xl font-extrabold text-white leading-[1.08] md:leading-[1.06] tracking-tight mb-3 md:mb-5 max-w-3xl"
         style={{ textShadow: "0 2px 12px rgba(0,0,0,0.35), 0 1px 3px rgba(0,0,0,0.5)" }}
       >
         Andere Plattformen zeigen Immobilien,<br />wir verstehen Menschen.
@@ -73,7 +73,7 @@ export function HeroWaitlist() {
 
       {/* Subtitle */}
       <p
-        className="text-base md:text-lg font-medium text-white/90 mb-10 max-w-lg leading-relaxed"
+        className="text-sm md:text-lg font-medium text-white/90 mb-7 md:mb-10 max-w-lg leading-relaxed"
         style={{ textShadow: "0 1px 6px rgba(0,0,0,0.4)" }}
       >
         Ein Profil. Überall bewerben. Ohne Anschreiben.
