@@ -786,9 +786,9 @@ export default function LandingPage() {
                 <p className="text-white/60 text-xs font-semibold uppercase tracking-widest mb-3">Rechtliches</p>
                 <ul className="space-y-2 flex flex-col md:flex-row md:gap-6 md:space-y-0">
                   {[
-                    { href: "#", label: "Datenschutz" },
-                    { href: "#", label: "Impressum" },
-                    { href: "#", label: "AGB" },
+                    { href: "/datenschutz", label: "Datenschutz" },
+                    { href: "/impressum", label: "Impressum" },
+                    { href: "/agb", label: "AGB" },
                   ].map((l) => (
                     <li key={l.label}>
                       <Link href={l.href} className="text-white/50 hover:text-white text-xs transition-colors">{l.label}</Link>
