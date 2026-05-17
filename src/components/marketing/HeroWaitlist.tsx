@@ -65,7 +65,7 @@ export function HeroWaitlist() {
 
       {/* Headline */}
       <h1
-        className="text-[28px] md:text-6xl font-extrabold text-white leading-[1.08] md:leading-[1.06] tracking-tight mb-3 md:mb-5 max-w-3xl"
+        className="text-[34px] sm:text-[40px] md:text-6xl font-extrabold text-white leading-[1.05] md:leading-[1.06] tracking-tight mb-4 md:mb-5 max-w-3xl"
         style={{ textShadow: "0 2px 12px rgba(0,0,0,0.35), 0 1px 3px rgba(0,0,0,0.5)" }}
       >
         Andere Plattformen zeigen Immobilien,<br />wir verstehen Menschen.
