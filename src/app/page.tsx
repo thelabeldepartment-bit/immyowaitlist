@@ -82,7 +82,7 @@ export default function LandingPage() {
             </div>
 
             {/* Right: mockups matching real UI */}
-            <div className="relative h-[660px] hidden md:flex justify-center mt-20" style={{ transform: "perspective(1200px) rotateY(-8deg) rotateX(4deg)", transformStyle: "preserve-3d" }}>
+            <div className="relative h-[500px] md:h-[660px] flex justify-center origin-top mt-4 md:mt-20 mockup-3d">
 
               {/* Besichtigung — floats left, mid-height */}
               <div className="absolute left-0 top-[200px] w-[205px] z-20 bg-white rounded-2xl shadow-xl border border-stone-100 overflow-hidden -rotate-2">

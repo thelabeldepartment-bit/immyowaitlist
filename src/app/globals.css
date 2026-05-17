@@ -52,4 +52,14 @@
   .notification-dot {
     @apply absolute -top-1 -right-1 h-4 w-4 rounded-full bg-red-500 text-white text-[10px] font-bold flex items-center justify-center ring-2 ring-white;
   }
+
+  .mockup-3d {
+    transform: scale(0.72) perspective(1200px) rotateY(-8deg) rotateX(4deg);
+    transform-style: preserve-3d;
+  }
+  @media (min-width: 768px) {
+    .mockup-3d {
+      transform: perspective(1200px) rotateY(-8deg) rotateX(4deg);
+    }
+  }
 }
