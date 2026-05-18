@@ -329,7 +329,7 @@ export default function LandingPage() {
             </div>
 
             {/* Dashboard mockup */}
-            <div className="rounded-3xl p-4 md:p-6 border border-stone-100 overflow-visible" style={{ background: "rgba(248,247,245,0.80)", backdropFilter: "blur(16px)", WebkitBackdropFilter: "blur(16px)", boxShadow: "0 16px 48px rgba(0,0,0,0.12), 0 4px 12px rgba(0,0,0,0.06), inset 0 1px 0 rgba(255,255,255,0.9)" }}>
+            <div className="rounded-3xl p-6 border border-stone-100 overflow-visible [zoom:0.6] sm:[zoom:0.9] md:[zoom:1]" style={{ background: "rgba(248,247,245,0.80)", backdropFilter: "blur(16px)", WebkitBackdropFilter: "blur(16px)", boxShadow: "0 16px 48px rgba(0,0,0,0.12), 0 4px 12px rgba(0,0,0,0.06), inset 0 1px 0 rgba(255,255,255,0.9)" }}>
               <h4 className="text-xs font-semibold text-carbon/40 mb-4 uppercase tracking-widest">Meine Objekte</h4>
               <div className="grid grid-cols-2 gap-3 overflow-visible pt-2">
 
