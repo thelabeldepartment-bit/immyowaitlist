@@ -11,7 +11,7 @@ export default function LandingPage() {
       <ScrollJackInit />
 
       {/* ── Hero ── */}
-      <section data-gsap-hero className="relative w-full min-h-[640px] md:min-h-[780px]">
+      <section data-gsap-hero className="relative w-full min-h-[720px] md:min-h-[780px]">
         <Image
           src="/hero-building.jpg"
           alt="Modernes Gebäude – IMMYO"
