@@ -22,7 +22,7 @@ export default function LandingPage() {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/20 to-black/50" />
 
-        <div className="absolute inset-0 flex flex-col items-center justify-start md:justify-center px-4 pt-12 md:pt-8 text-center">
+        <div className="absolute inset-0 flex flex-col items-center justify-center px-4 pt-8 text-center">
           <HeroWaitlist />
         </div>
       </section>
