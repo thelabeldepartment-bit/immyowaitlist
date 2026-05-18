@@ -328,9 +328,10 @@ export default function LandingPage() {
               </div>
             </div>
 
-            {/* Dashboard mockup — fixed 640px design width on mobile + zoom for visual scaling, so all inner cards have the same design space as on desktop */}
-            <div className="overflow-hidden md:overflow-visible">
-            <div className="rounded-3xl p-6 border border-stone-100 overflow-visible w-[640px] md:w-auto mx-auto [zoom:0.55] sm:[zoom:0.9] md:[zoom:1]" style={{ background: "rgba(248,247,245,0.80)", backdropFilter: "blur(16px)", WebkitBackdropFilter: "blur(16px)", boxShadow: "0 16px 48px rgba(0,0,0,0.12), 0 4px 12px rgba(0,0,0,0.06), inset 0 1px 0 rgba(255,255,255,0.9)" }}>
+            {/* Dashboard mockup — render at full 640px desktop design width on mobile, then visually scale with CSS transform so cards/text stay 1:1 with desktop, just smaller. max-h caps the wrapper so the layout doesn't leave empty vertical space below the scaled-down mockup. */}
+            <div className="overflow-hidden md:overflow-visible w-full max-h-[460px] sm:max-h-[760px] md:max-h-none">
+              <div className="origin-top-left w-[640px] md:w-auto scale-[0.55] sm:scale-[0.9] md:scale-100">
+                <div className="rounded-3xl p-6 border border-stone-100 overflow-visible" style={{ background: "rgba(248,247,245,0.80)", backdropFilter: "blur(16px)", WebkitBackdropFilter: "blur(16px)", boxShadow: "0 16px 48px rgba(0,0,0,0.12), 0 4px 12px rgba(0,0,0,0.06), inset 0 1px 0 rgba(255,255,255,0.9)" }}>
               <h4 className="text-xs font-semibold text-carbon/40 mb-4 uppercase tracking-widest">Meine Objekte</h4>
               <div className="grid grid-cols-2 gap-3 overflow-visible pt-2">
 
@@ -507,7 +508,8 @@ export default function LandingPage() {
                   <p className="text-center text-[9px] text-carbon/30 pb-2.5">+4 weitere Bewerber</p>
                 </div>
               </div>
-            </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
