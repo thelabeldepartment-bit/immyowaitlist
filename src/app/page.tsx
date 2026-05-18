@@ -277,7 +277,7 @@ export default function LandingPage() {
       </section>
 
       {/* ── Für Anbieter & Verkäufer ── */}
-      <section data-gsap-section className="min-h-screen flex flex-col justify-center py-16 md:py-24 bg-white">
+      <section data-gsap-section className="flex flex-col md:min-h-screen md:justify-center py-16 md:py-24 bg-white">
         <div className="immio-container md:pt-10">
           <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
             <div>
@@ -328,9 +328,9 @@ export default function LandingPage() {
               </div>
             </div>
 
-            {/* Dashboard mockup — render at full 640px desktop design width on mobile, then visually scale with CSS transform so cards/text stay 1:1 with desktop, just smaller. max-h caps the wrapper so the layout doesn't leave empty vertical space below the scaled-down mockup. */}
-            <div className="overflow-hidden md:overflow-visible w-full max-h-[460px] sm:max-h-[760px] md:max-h-none">
-              <div className="origin-top-left w-[640px] md:w-auto scale-[0.55] sm:scale-[0.9] md:scale-100">
+            {/* Dashboard mockup — render at full 640px desktop design width on mobile, then visually scale with CSS transform so cards/text stay 1:1 with desktop, just smaller. flex justify-center centers the scaled visual horizontally; max-h caps the wrapper so the layout doesn't leave empty vertical space below the scaled mockup. */}
+            <div className="overflow-hidden md:overflow-visible w-full max-h-[310px] sm:max-h-[480px] md:max-h-none flex justify-center md:block">
+              <div className="origin-top w-[640px] md:w-auto scale-[0.55] sm:scale-[0.9] md:scale-100">
                 <div className="rounded-3xl p-6 border border-stone-100 overflow-visible" style={{ background: "rgba(248,247,245,0.80)", backdropFilter: "blur(16px)", WebkitBackdropFilter: "blur(16px)", boxShadow: "0 16px 48px rgba(0,0,0,0.12), 0 4px 12px rgba(0,0,0,0.06), inset 0 1px 0 rgba(255,255,255,0.9)" }}>
               <h4 className="text-xs font-semibold text-carbon/40 mb-4 uppercase tracking-widest">Meine Objekte</h4>
               <div className="grid grid-cols-2 gap-3 overflow-visible pt-2">
