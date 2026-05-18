@@ -58,17 +58,24 @@ export function HeroWaitlist() {
   return (
     <div className="w-full max-w-xl mx-auto flex flex-col items-center text-center">
       {/* Badge */}
-      <div className="inline-flex items-center gap-1.5 md:gap-2 bg-white/15 backdrop-blur-md text-white text-[9px] md:text-[11px] font-semibold px-3 py-1.5 md:px-4 md:py-2 rounded-full mb-5 md:mb-8 border border-white/30 tracking-[0.1em] md:tracking-[0.12em] uppercase shadow-md">
+      <div className="inline-flex items-center gap-1.5 md:gap-2 bg-white/15 backdrop-blur-md text-white text-[10px] md:text-[11px] font-semibold px-3 py-1.5 md:px-4 md:py-2 rounded-full mb-5 md:mb-8 border border-white/30 tracking-[0.1em] md:tracking-[0.12em] uppercase shadow-md">
         <Star className="h-2.5 w-2.5 md:h-3 md:w-3 fill-white text-white" />
         Die moderne Immobilienplattform für Deutschland
       </div>
 
       {/* Headline */}
       <h1
-        className="text-[34px] sm:text-[40px] md:text-6xl font-extrabold text-white leading-[1.05] md:leading-[1.06] tracking-tight mb-4 md:mb-5 max-w-3xl"
+        className="text-[30px] sm:text-[36px] md:text-6xl font-extrabold text-white leading-[1.12] md:leading-[1.06] tracking-tight mb-4 md:mb-5 max-w-3xl"
         style={{ textShadow: "0 2px 12px rgba(0,0,0,0.35), 0 1px 3px rgba(0,0,0,0.5)" }}
       >
-        Andere Plattformen zeigen Immobilien,<br />wir verstehen Menschen.
+        <span className="md:hidden">
+          Andere Plattformen<br />
+          zeigen Immobilien,<br />
+          wir verstehen Menschen.
+        </span>
+        <span className="hidden md:inline">
+          Andere Plattformen zeigen Immobilien,<br />wir verstehen Menschen.
+        </span>
       </h1>
 
       {/* Subtitle */}
