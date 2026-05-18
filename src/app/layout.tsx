@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Permanent_Marker, Caveat } from "next/font/google";
 import Link from "next/link";
 import Image from "next/image";
+import { Analytics } from "@vercel/analytics/next";
 import { CookieBanner } from "@/components/CookieBanner";
 import { BackToTop } from "@/components/BackToTop";
 import "./globals.css";
@@ -61,6 +62,7 @@ export default function RootLayout({
         <main className="flex-1 pt-16">{children}</main>
         <BackToTop />
         <CookieBanner />
+        <Analytics />
       </body>
     </html>
   );

@@ -144,7 +144,43 @@ export default function DatenschutzPage() {
 
           <section className="space-y-3 mb-8">
             <h2 className="text-base md:text-lg font-semibold text-carbon mb-2">
-              6. Schriftarten (next/font)
+              6. Reichweitenmessung (Vercel Analytics)
+            </h2>
+            <p className="text-sm md:text-base text-carbon/70 leading-relaxed">
+              Zur statistischen Auswertung der Nutzung unserer Website setzen wir{" "}
+              <strong>Vercel Web Analytics</strong> ein, einen Dienst der Vercel
+              Inc., 440 N Barranca Avenue #4133, Covina, CA 91723, USA. Dabei
+              werden Informationen wie aufgerufene Seiten, Verweisquelle, ungefährer
+              Standort (Land), verwendeter Browser und Gerätetyp erfasst und in
+              aggregierter, anonymisierter Form ausgewertet.
+            </p>
+            <p className="text-sm md:text-base text-carbon/70 leading-relaxed">
+              Vercel Analytics arbeitet <strong>ohne Cookies</strong> und{" "}
+              <strong>ohne dauerhafte Identifizierung</strong> einzelner Besucher.
+              IP-Adressen werden durch Vercel gehasht und nicht dauerhaft
+              gespeichert; eine Zuordnung zu einer natürlichen Person ist uns
+              nicht möglich.
+            </p>
+            <p className="text-sm md:text-base text-carbon/70 leading-relaxed">
+              Rechtsgrundlage der Verarbeitung ist unser berechtigtes Interesse an
+              einer statistischen Auswertung des Nutzungsverhaltens zur Optimierung
+              unseres Angebots (Art. 6 Abs. 1 lit. f DSGVO). Weitere Informationen
+              zum Datenschutz bei Vercel finden Sie unter{" "}
+              <a
+                href="https://vercel.com/legal/privacy-policy"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-carbon underline underline-offset-2 hover:text-carbon/70"
+              >
+                vercel.com/legal/privacy-policy
+              </a>
+              .
+            </p>
+          </section>
+
+          <section className="space-y-3 mb-8">
+            <h2 className="text-base md:text-lg font-semibold text-carbon mb-2">
+              7. Schriftarten (next/font)
             </h2>
             <p className="text-sm md:text-base text-carbon/70 leading-relaxed">
               Wir verwenden auf unserer Website Schriftarten (u.&nbsp;a. „Geist",
@@ -158,7 +194,7 @@ export default function DatenschutzPage() {
 
           <section className="space-y-3 mb-8">
             <h2 className="text-base md:text-lg font-semibold text-carbon mb-2">
-              7. Empfänger und Drittlandsübermittlung
+              8. Empfänger und Drittlandsübermittlung
             </h2>
             <p className="text-sm md:text-base text-carbon/70 leading-relaxed">
               Eine Übermittlung Ihrer personenbezogenen Daten erfolgt nur an die
@@ -173,7 +209,7 @@ export default function DatenschutzPage() {
 
           <section className="space-y-3 mb-8">
             <h2 className="text-base md:text-lg font-semibold text-carbon mb-2">
-              8. Speicherdauer
+              9. Speicherdauer
             </h2>
             <p className="text-sm md:text-base text-carbon/70 leading-relaxed">
               Wir speichern personenbezogene Daten nur so lange, wie dies für die
@@ -186,7 +222,7 @@ export default function DatenschutzPage() {
 
           <section className="space-y-3 mb-8">
             <h2 className="text-base md:text-lg font-semibold text-carbon mb-2">
-              9. Ihre Rechte als betroffene Person
+              10. Ihre Rechte als betroffene Person
             </h2>
             <p className="text-sm md:text-base text-carbon/70 leading-relaxed">
               Sie haben uns gegenüber jederzeit folgende Rechte hinsichtlich der
@@ -229,7 +265,7 @@ export default function DatenschutzPage() {
 
           <section className="space-y-3">
             <h2 className="text-base md:text-lg font-semibold text-carbon mb-2">
-              10. Aktualität dieser Datenschutzerklärung
+              11. Aktualität dieser Datenschutzerklärung
             </h2>
             <p className="text-sm md:text-base text-carbon/70 leading-relaxed">
               Wir behalten uns vor, diese Datenschutzerklärung anzupassen, damit
